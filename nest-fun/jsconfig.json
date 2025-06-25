@@ -1,0 +1,14 @@
+{
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["src/*"]
+    },
+    "checkJs": true, // Enables type checking for JavaScript files (useful!)
+    "jsx": "react-jsx", // If you're using React with JSX
+    "module": "ESNext",
+    "moduleResolution": "bundler", // Or "node" depending on your setup
+    "target": "ESNext"
+  },
+  "include": ["src/**/*", "vite-env.d.ts"] // Ensure this includes your d.ts file
+}
