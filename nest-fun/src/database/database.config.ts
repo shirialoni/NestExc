@@ -1,6 +1,6 @@
-import { SequelizeModuleOptions } from '@nestjs/sequelize';
 import { ConfigService } from '@nestjs/config';
-import { Product } from 'src/products/product.model';
+import { SequelizeModuleOptions } from '@nestjs/sequelize';
+import { Product } from 'src/modules/products/entities/product.entity';
 
 export const getSequelizeConfig = (
   configService: ConfigService,

@@ -20,15 +20,18 @@
     "test:e2e": "jest --config ./test/jest-e2e.json"
   },
   "dependencies": {
-    "@mui/material": "^5.16.4", 
-    "@mui/icons-material": "^5.16.4", 
-    "@emotion/react": "^11.11.4", 
+    "@emotion/react": "^11.11.4",
     "@emotion/styled": "^11.11.4",
+    "@mui/icons-material": "^5.16.4",
+    "@mui/material": "^5.16.4",
     "@nestjs/common": "^11.0.1",
     "@nestjs/config": "^4.0.2",
     "@nestjs/core": "^11.0.1",
+    "@nestjs/mapped-types": "^2.1.0",
     "@nestjs/platform-express": "^11.0.1",
     "@nestjs/sequelize": "^11.0.0",
+    "class-transformer": "^0.5.1",
+    "class-validator": "^0.14.2",
     "pg": "^8.16.0",
     "pg-hstore": "^2.3.4",
     "primereact": "^10.9.5",
@@ -36,6 +39,7 @@
     "rxjs": "^7.8.1",
     "sequelize": "^6.37.7",
     "sequelize-typescript": "^2.1.6",
+    "ts-custom-error": "^3.3.1",
     "tsx": "^4.19.4"
   },
   "devDependencies": {

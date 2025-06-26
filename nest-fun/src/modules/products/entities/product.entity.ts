@@ -1,4 +1,3 @@
-import { Optional } from 'sequelize';
 import {
   Table,
   Column,
@@ -8,20 +7,13 @@ import {
   AutoIncrement,
 } from 'sequelize-typescript';
 
-interface ProductAttributes {
-  id: number;
-  title: string;
-  description: string;
-  price: number;
-}
-
-interface ProductCreationAttributes extends Optional<ProductAttributes, 'id'> {}
+import { IProductCreationAttributes } from '../interfaces/product.interface';
 
 @Table({
   tableName: 'products',
   timestamps: false,
 })
-export class Product extends Model<Product, ProductCreationAttributes> {
+export class Product extends Model<Product, IProductCreationAttributes> {
   @PrimaryKey
   @AutoIncrement
   @Column(DataType.INTEGER)
