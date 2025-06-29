@@ -12,9 +12,10 @@ async function bootstrap() {
   app.useGlobalPipes(
     new ValidationPipe({
       transform: true,
+      forbidUnknownValues: true,
     }),
   );
-  
+
   await app.listen(process.env.PORT ?? 3000);
 }
 

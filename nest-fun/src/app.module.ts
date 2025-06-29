@@ -10,7 +10,6 @@ import { ProductModule } from './modules/products/products.module';
   imports: [
     ConfigModule.forRoot({
       isGlobal: true,
-      envFilePath: '.env',
     }),
     SequelizeModule.forRootAsync({
       imports: [ConfigModule],
